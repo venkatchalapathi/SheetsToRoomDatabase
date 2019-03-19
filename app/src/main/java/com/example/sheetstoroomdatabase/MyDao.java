@@ -11,7 +11,10 @@ import java.util.List;
 public interface MyDao {
 
     @Query("Select * from Sheet1")
-    LiveData<List<Model>> getAllData();
+    LiveData<List<Sheet1>> getAllData();
+
+    @Query("Select * from Sheet1")
+    List<Sheet1> getAll();
 
     @Insert
     void insertData(Sheet1 sheet1);

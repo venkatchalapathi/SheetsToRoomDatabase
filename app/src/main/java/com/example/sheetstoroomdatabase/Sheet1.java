@@ -34,7 +34,7 @@ public class Sheet1 {
     @NonNull
     @SerializedName("AADHAR_NO")
     @Expose
-    private Integer aADHARNO;
+    private String aADHARNO;
     @SerializedName("IMAGE")
     @Expose
     private String iMAGE;
@@ -87,11 +87,11 @@ public class Sheet1 {
         this.eMAILID = eMAILID;
     }
 
-    public Integer getAADHARNO() {
+    public String getAADHARNO() {
         return aADHARNO;
     }
 
-    public void setAADHARNO(Integer aADHARNO) {
+    public void setAADHARNO(String aADHARNO) {
         this.aADHARNO = aADHARNO;
     }
 
